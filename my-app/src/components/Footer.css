@@ -1,0 +1,236 @@
+.footer {
+  background: linear-gradient(
+    180deg,
+    var(--color-graphite) 0%,
+    var(--color-graphite-dark) 100%
+  );
+  padding: 100px 0 50px;
+  border-top: 1px solid rgba(196, 246, 0, 0.2);
+  position: relative;
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(196, 246, 0, 0.5),
+    transparent
+  );
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 60px;
+  margin-bottom: 70px;
+}
+
+.footer-brand {
+  max-width: 320px;
+}
+
+.footer-brand .logo {
+  display: inline-flex;
+  margin-bottom: 24px;
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.footer-brand .logo::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background: var(--color-lime);
+  border-radius: 50%;
+  box-shadow: 0 0 15px var(--color-lime-glow);
+  align-self: center;
+  margin-right: 8px;
+}
+
+.footer-tagline {
+  color: var(--color-text-gray);
+  font-size: 15px;
+  line-height: 1.8;
+  font-weight: 300;
+}
+
+.footer-links {
+  display: flex;
+  gap: 100px;
+  flex-wrap: wrap;
+}
+
+.footer-column h4 {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-white);
+  margin-bottom: 24px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.footer-column h4::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--color-lime), transparent);
+  border-radius: 1px;
+}
+
+.footer-column ul {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.footer-column a {
+  color: var(--color-text-gray);
+  font-size: 15px;
+  transition: all var(--transition-fast);
+  position: relative;
+  padding-left: 0;
+}
+
+.footer-column a::before {
+  content: '';
+  position: absolute;
+  left: -12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 4px;
+  background: var(--color-lime);
+  border-radius: 50%;
+  opacity: 0;
+  transition: all var(--transition-fast);
+}
+
+.footer-column a:hover {
+  color: var(--color-lime);
+  text-shadow: 0 0 10px var(--color-lime-glow);
+  padding-left: 16px;
+}
+
+.footer-column a:hover::before {
+  opacity: 1;
+  left: 0;
+}
+
+.footer-column li:not(:has(a)) {
+  color: var(--color-text-gray);
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-column li:not(:has(a))::before {
+  content: '📍';
+  font-size: 14px;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 50px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-bottom p {
+  color: var(--color-text-gray);
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.social-links {
+  display: flex;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.social-links a {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid rgba(196, 246, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-lime);
+  font-size: 18px;
+  transition: all var(--transition-fast);
+  background: rgba(196, 246, 0, 0.05);
+}
+
+.social-links a:hover {
+  background: var(--color-lime);
+  color: var(--color-graphite-dark);
+  border-color: var(--color-lime);
+  box-shadow: 0 0 20px var(--color-lime-glow);
+  transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 70px 0 40px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  .footer-brand {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .footer-brand .logo {
+    justify-content: center;
+  }
+
+  .footer-links {
+    justify-content: center;
+    gap: 48px;
+  }
+
+  .footer-column {
+    text-align: center;
+  }
+
+  .footer-column h4::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .footer-column a:hover {
+    padding-left: 0;
+  }
+
+  .footer-column a:hover::before {
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .footer-column li:not(:has(a)) {
+    justify-content: center;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+}

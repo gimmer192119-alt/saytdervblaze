@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Видео фон -->
+    <div class="video-background">
+        <video autoplay muted loop playsinline>
+            <source src="https://hb.ru-msk.vkcloud-storage.ru/media.sovetnik.ai/videos/2092b8e3-79a3-4e83-9584-471c5adca8e7.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=7voFRz62qQqdzK6ijxTgjR%2F20260525%2Fru-msk%2Fs3%2Faws4_request&X-Amz-Date=20260525T043633Z&X-Amz-Expires=1800&X-Amz-SignedHeaders=host&X-Amz-Signature=7aa0b82c3be18f8b49a17025435ae27a52d761ecd84ac6dd8b6e6953e91b89a9" type="video/mp4">
+            Ваш браузер не поддерживает видео.
+        </video>
+        <div class="overlay"></div>
+    </div>
+
+    <!-- Навигация -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-text">BRAND</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+            <button class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Главный контент -->
+    <main class="hero-section" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="highlight">Современные</span> решения для вашего бизнеса
+                </h1>
+                <p class="hero-subtitle">
+                    Мы создаем инновационные продукты, которые помогают вашему бизнесу расти и развиваться в цифровую эпоху.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Начать проект</a>
+                    <a href="#about" class="btn btn-secondary">Узнать больше</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Секция преимуществ -->
+    <section class="features-section" id="about">
+        <div class="container">
+            <h2 class="section-title">Почему выбирают нас</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🚀</div>
+                    <h3>Скорость</h3>
+                    <p>Быстрая реализация проектов без потери качества</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💎</div>
+                    <h3>Качество</h3>
+                    <p>Внимание к деталям и высокий стандарт работы</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Результат</h3>
+                    <p>Фокус на достижении конкретных бизнес-целей</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>BRAND</h4>
+                    <p>Создаем будущее вместе с вами</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Контакты</h4>
+                    <p>Email: info@brand.com</p>
+                    <p>Телефон: +7 (999) 000-00-00</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Соцсети</h4>
+                    <div class="social-links">
+                        <a href="#">Telegram</a>
+                        <a href="#">VK</a>
+                        <a href="#">YouTube</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 BRAND. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

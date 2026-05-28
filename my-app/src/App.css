@@ -1,0 +1,8 @@
+/* App specific styles */
+main {
+  position: relative;
+}
+
+.highlight {
+  color: var(--color-lime);
+}
